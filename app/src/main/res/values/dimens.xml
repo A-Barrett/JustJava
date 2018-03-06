@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <dimen name="padBottom">16dp</dimen>
+    <dimen name="padTop">16dp</dimen>
+    <dimen name="paddingRight">16dp</dimen>
+    <dimen name="paddingLeft">16dp</dimen>
+    <dimen name="textSize">16sp</dimen>
+    <dimen name="height">48dp</dimen>
+    <dimen name="width">48dp</dimen>
+
+</resources>
