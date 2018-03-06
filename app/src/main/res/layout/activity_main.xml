@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sillycoffeeblues"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padBottom"
+        android:paddingEnd="@dimen/paddingRight"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:paddingStart="@dimen/paddingLeft"
+        android:paddingTop="@dimen/padTop"
+        tools:context="com.example.android.justjava.MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padBottom"
+            android:text="@string/toppings"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize" />
+
+        <CheckBox
+            android:id="@+id/whipped_cream_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="@string/whipped_cream"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/chocolate_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Chocolate"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="@dimen/padBottom"
+            android:text="@string/quantity"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="@dimen/width"
+                android:layout_height="@dimen/height"
+                android:onClick="decrement"
+                android:text="@string/minus"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/two"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize" />
+
+            <Button
+                android:layout_width="@dimen/width"
+                android:layout_height="@dimen/height"
+                android:onClick="increment"
+                android:text="@string/plus"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padBottom"
+            android:paddingTop="@dimen/padTop"
+            android:text="@string/order_summary"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/order_summary_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padBottom"
+            android:text="@string/_10"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="170dp"
+            android:onClick="submitOrder"
+            android:paddingTop="@dimen/padTop"
+            android:text="@string/order" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:text="@string/please_come_again"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:targetApi="jelly_bean" />
+
+    </LinearLayout>
+</ScrollView>
