@@ -6,20 +6,28 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@drawable/sillycoffeeblues"
         android:orientation="vertical"
         android:paddingBottom="@dimen/padBottom"
-        android:paddingEnd="@dimen/paddingRight"
+        android:paddingEnd="@dimen/paddingEnd"
         android:paddingLeft="@dimen/paddingLeft"
         android:paddingRight="@dimen/paddingRight"
         android:paddingStart="@dimen/paddingLeft"
         android:paddingTop="@dimen/padTop"
         tools:context="com.example.android.justjava.MainActivity">
 
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:inputType="textCapWords" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin_top"
             android:paddingBottom="@dimen/padBottom"
             android:text="@string/toppings"
             android:textAllCaps="true"
@@ -30,7 +38,6 @@
             android:id="@+id/whipped_cream_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
             android:text="@string/whipped_cream"
             android:textSize="16sp" />
 
@@ -38,8 +45,7 @@
             android:id="@+id/chocolate_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="Chocolate"
+            android:text="@string/chocolate"
             android:textSize="16sp" />
 
         <TextView
@@ -60,6 +66,7 @@
             <Button
                 android:layout_width="@dimen/width"
                 android:layout_height="@dimen/height"
+                android:layout_marginBottom="16dp"
                 android:onClick="decrement"
                 android:text="@string/minus"
                 android:textColor="@color/black"
@@ -69,9 +76,10 @@
                 android:id="@+id/quantity_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:freezesText="true"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
-                android:text="@string/two"
+                android:text="@string/_1"
                 android:textColor="@color/black"
                 android:textSize="@dimen/textSize" />
 
@@ -85,32 +93,13 @@
 
         </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/padBottom"
-            android:paddingTop="@dimen/padTop"
-            android:text="@string/order_summary"
-            android:textAllCaps="true"
-            android:textColor="@color/black"
-            android:textSize="@dimen/textSize" />
-
-        <TextView
-            android:id="@+id/order_summary_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/padBottom"
-            android:text="@string/_10"
-            android:textColor="@color/black"
-            android:textSize="@dimen/textSize" />
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="170dp"
+            android:layout_marginBottom="@dimen/button_margin_bottom"
             android:onClick="submitOrder"
             android:paddingTop="@dimen/padTop"
-            android:text="@string/order" />
+            android:text="@string/place_order" />
 
         <TextView
             android:layout_width="wrap_content"
